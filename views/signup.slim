@@ -3,13 +3,13 @@ form.form-horizontal(action=url('/signup') method='post' role='role')
   .form-group
     label.control-label.col-sm-2(for='name') Full Name
     .col-sm-10
-      input.form-control#name(name='name' type='text' placeholder='Andrew Carnegie' required=true)
+      input.form-control#name(name='name' type='text' placeholder='Eugene Chang' required=true)
   .form-group
-    label.control-label.col-sm-2(for='andrew_id') Andrew ID
+    label.control-label.col-sm-2(for='andrew_id') 9 Digit ID
     .col-sm-10
-      input.form-control#andrew_id(name='andrew_id' type='text' placeholder='acarnegie' required=true)
+      input.form-control#andrew_id(name='andrew_id' type='text' placeholder='9999' required=true)
   .form-group
-    label.control-label.col-sm-2(for='floor') Floor/Tower
+    label.control-label.col-sm-2(for='floor') TA
     .col-sm-10
       select.form-control(name='floor')
         - Assassins::Floor.all.each do |floor|
