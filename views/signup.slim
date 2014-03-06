@@ -14,14 +14,7 @@ form.form-horizontal(action=url('/signup') method='post' role='role')
       select.form-control(name='floor')
         - Assassins::Floor.all.each do |floor|
           option(value=floor.id) #{floor.description}
-  /!.form-group
-    /!label.control-label.col-sm-2(for='program') Program
-    /!.col-sm-10
-      /!.radio
-        /!- Assassins::Program.all.each do |program|
-          /!label
-            /!input(type='radio' name='program' value=program.id)
-            /!#{program.title}
+  
   .form-group
     .col-sm-10.col-sm-offset-2
       button.btn.btn-primary(type='submit') Sign Up
