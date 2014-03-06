@@ -30,14 +30,14 @@ module Assassins
     property :id, Serial
     property :andrew_id, String, :unique => true,
       :messages => {
-        :presence  => 'Andrew ID must not be blank',
-        :is_unique => 'Andrew ID is already taken'
+        :presence  => 'E-mail must not be blank',
+        :is_unique => 'E-mail is already taken'
       }
     property :secret, String
 
     property :name, String
     belongs_to :floor
-    belongs_to :program
+    #belongs_to :program
 
     belongs_to :target, :model => 'Player', :required => false
     property :failed_kill_attempts, Integer, :default => 0

@@ -117,8 +117,8 @@ module Assassins
       player = Player.new(:name => params['name'],
                           :andrew_id => params.has_key?('andrew_id') ?
                             params['andrew_id'].downcase.strip : nil,
-                          :floor_id => params['floor'],
-                          :program_id => params['program'])
+                          :floor_id => params['floor'])
+                          #,:program_id => params['program'])
       player.generate_secret! 2
       if (player.save)
         player.send_verification(url("/signup/verify?aid=#{player.andrew_id}&nonce=#{player.verification_key}"))
