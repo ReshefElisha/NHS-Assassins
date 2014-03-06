@@ -5,11 +5,11 @@
       h4 = @player.name
       p.user-info
         .floor 
-          strong Floor: 
+          strong TA: 
           = @player.floor.description
-        .program
-          strong Program: 
-          = @player.program.title
+        /!.program
+          /!strong Program: 
+          /!= @player.program.title
         .secret
           strong Secret Words: 
           .label.label-success = @player.secret
@@ -20,11 +20,11 @@
         h4 = @player.target.name
         p.user-info
           .floor 
-            strong Floor: 
+            strong TA: 
             = @player.target.floor.description
-          .program
-            strong Program: 
-            = @player.target.program.title
+          /!.program
+            /!strong Program: 
+            /!= @player.target.program.title
           .confirm
           br
           form(action=url('/dashboard/assassinate') method='post')
