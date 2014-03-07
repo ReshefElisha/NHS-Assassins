@@ -14,7 +14,6 @@
   - if @player.nil? && game_state == :pregame
     .col-md-6
       img.img-responsive src='logo.png'
-      img.img-responsive.hidden-phone src='skull.png' alt="You won't see it coming"
     .col-md-6
       == slim :signup, :layout => false
   - else

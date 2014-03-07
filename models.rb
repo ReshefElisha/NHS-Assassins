@@ -36,7 +36,7 @@ module Assassins
     property :secret, String
 
     property :name, String
-    belongs_to :floor
+    #belongs_to :floor
     #belongs_to :program
 
     belongs_to :target, :model => 'Player', :required => false
