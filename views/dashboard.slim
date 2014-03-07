@@ -4,9 +4,6 @@
     .well
       h4 = @player.name
       p.user-info
-        .floor 
-          strong TA: 
-          = @player.floor.description
         .secret
           strong Secret Words: 
           .label.label-success = @player.secret
@@ -16,9 +13,6 @@
       - if game_state == :ingame and not @player.target.nil?
         h4 = @player.target.name
         p.user-info
-          .floor 
-            strong TAs: 
-            = @player.target.floor.description
           .confirm
           br
           form(action=url('/dashboard/assassinate') method='post')

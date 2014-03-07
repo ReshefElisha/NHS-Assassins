@@ -8,12 +8,6 @@ form.form-horizontal(action=url('/signup') method='post' role='role')
     label.control-label.col-sm-2(for='andrew_id') E-mail
     .col-sm-10
       input.form-control#andrew_id(name='andrew_id' type='text' placeholder='email@example.com' required=true)
-  .form-group
-    label.control-label.col-sm-2(for='floor') TA
-    .col-sm-10
-      select.form-control(name='floor')
-        - Assassins::Floor.all.each do |floor|
-          option(value=floor.id) #{floor.description}
   
   .form-group
     .col-sm-10.col-sm-offset-2
