@@ -1,4 +1,4 @@
-CMU-Assassins
+NHS-Assassins
 =============
 
-The website for cmu-assassins.tk
+The website for nhs-assassins.heroku.com
