@@ -16,12 +16,10 @@
       img.img-responsive src='logo.png'
       img.img-responsive.hidden-phone src='skull.png' alt="You won't see it coming"
     .col-md-6
-      /!== slim :signup, :layout => false
+      == slim :signup, :layout => false
   - else
     .col-md-6
       img.img-responsive src='logo.png'
-    /!.col-md-6
-      /!img.img-responsive src='skull.png' alt="You won't see it coming"
 
 .row
   .col-md-12

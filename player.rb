@@ -109,7 +109,7 @@ module Assassins
     end
 
     post '/signup', :game_state => :pregame do
-      if (params.has_key?('andrew_id') && params['andrew_id'].index('@'))
+      if (params.has_key?('andrew_id') && !params['andrew_id'].index('@'))
         return slim :signup, :locals => {:errors =>
           ['Please enter your correct e-mail.']};
       end
