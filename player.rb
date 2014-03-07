@@ -116,8 +116,8 @@ module Assassins
 
       player = Player.new(:name => params['name'],
                           :andrew_id => params.has_key?('andrew_id') ?
-                            params['andrew_id'].downcase.strip : nil,
-                          :floor_id => 1)
+                            params['andrew_id'].downcase.strip : nil)
+                          #:floor_id => 1)
                           #,:program_id => params['program'])
       player.generate_secret! 2
       if (player.save)
