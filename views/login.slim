@@ -5,7 +5,7 @@ form.form-horizontal(action=url('/login') method='post')
     .col-sm-10
       input.form-control#andrew_id(name='andrew_id' type='text' placeholder='email@example.com' required=true)
   .form-group
-    label.control-label.col-sm-2(for='secret') Secret Words
+    label.control-label.col-sm-2(for='secret') Secret Words (including spaces, ex: 'Poem Frog')
     .col-sm-10
       input.form-control#secret(name='secret' type='password' required=true)
   .form-group

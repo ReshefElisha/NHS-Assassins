@@ -10,7 +10,7 @@ module Assassins
         :text => body,
         :to => to,
         :preserve_recipients => false,
-        :from_email => 'donotreply@nhs-assassins.herokuapp.com'
+        :from_email => 'nhs.senior.assassins@gmail.com'
       }
       if !mailer.nil?
         $stderr.puts mailer.messages.send(message)
